@@ -4,17 +4,17 @@ import Image from "next/image";
 
 export default function Page() {
     return (
-        <Grid container spacing={12} justifyContent="center" alignContent="center">
+        <Grid container spacing={12} justifyContent="center" alignContent="center" className="mt-16">
             <Grid item direction="column" className="mt-16 text-center">
                 <div className="text-5xl text-pink-300 font-bold"> OUR HISTORY </div>
                 <div className="text-xl italic"> The Story of Caked Up Cafe </div>
             </Grid>
 
-            <Grid container item spacing={0} direction="row" className="pt-16 text-left">
+            <Grid container item spacing={0} direction="row" className="text-left">
                 <Grid item container xs={0} md={6} justifyContent="center">
                     <Image src="/cc.png" width={500} height={500} alt="chocolate cake"/>
                 </Grid>
-                <Grid item container xs={0} md={6} spacing={2}>
+                <Grid item container xs={0} md={6} spacing={2} className="p-8">
                     <Grid item container direction="column" spacing={3}>
                         <Grid item xs={1} className="text-3xl text-pink-300 font-semibold">From Humble Beginnings</Grid>
                         <Grid item xs={1} className="">
@@ -40,33 +40,35 @@ export default function Page() {
                 </Grid>
             </Grid>
 
-            <Grid item container spacing={6} direction="row" className=" m-4 text-center" justifyContent="center" alignItems="center">
+            <Grid item container spacing={0} direction="column" className=" m-4 text-center" justifyContent="center" alignItems="center">
                 <Grid item container direction="column" >
                     <Grid item className="text-3xl text-pink-300"> WHY CHOOSE CAKED UP CAFE? </Grid>
                     <Grid item className="italic text-gray-300"> What makes us different </Grid>
                 </Grid>
-                <Grid item container spacing={0} justifyContent="center">
+                <Grid item container spacing={0} justifyContent="center" direction="row">
 
-                    <Paper elevation={10} className="w-72 p-8 m-8 hover-glow flex justify-center items-center" >
-                        <Grid item container spacing={4} justifyContent="stretch" className="w-full h-full" direction="column">
+
+                    <Paper elevation={10} className="w-80 p-8 m-8 hover-glow flex justify-center items-center" >
+                        <Grid item container spacing={2} justifyContent="start" direction="column">
                                 <Grid item className="text-2xl text-pink-300">BEST <br/> SERVICE</Grid> 
                                 <Grid item className="p-4 text-left">At Caked Up Cafe, we love our guests. Which is why we are dedicated to provide the best experience and service possible.</Grid>
                         </Grid>
                     </Paper>
 
-                    <Paper elevation={10} className="w-72 p-8 m-8 hover-glow flex justify-center items-center" >
-                        <Grid item container spacing={4} justifyContent="stretch" className="w-full h-full">
+                    <Paper elevation={10} className="w-80 p-8 m-8 hover-glow flex justify-center items-center" >
+                        <Grid item container spacing={2} justifyContent="start">
                                 <Grid item className="text-2xl text-pink-300">SIMPLY IRRESISTIBLE</Grid> 
                                 <Grid item className="p-4 text-left">We’re convinced that you will fall in love with our tasty treats. Each one of our desserts has been hand-crafted with love and tastes out of this world.</Grid>
                         </Grid>
                     </Paper>
-                    
-                    <Paper elevation={10} className="w-72 p-8 m-8 hover-glow flex justify-center items-center" >
-                        <Grid item container spacing={4} justifyContent="stretch" className="w-full h-full">
+
+                    <Paper elevation={10} className="w-80 p-8 m-8 hover-glow flex justify-center items-center" >
+                        <Grid item container spacing={2} justifyContent="start">
                                 <Grid item className="text-2xl text-pink-300">ALL NATURAL INGREDIENTS</Grid> 
                                 <Grid item className="p-4 text-left">We create everything from scratch and don’t use any artificial ingredients, fillers, or flavoring.</Grid>
                         </Grid>
                     </Paper>
+
 
                 </Grid>
                 

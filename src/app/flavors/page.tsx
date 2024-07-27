@@ -184,23 +184,23 @@ const flavors = [
 
 export default function Page() {
     return (
-        <Grid container spacing={2} direction="column" className="pt-16 text-center">
-            <Grid item xs={2}>
-                <h1 className="text-4xl text-pink-300">Flavors</h1>
-                <h2 className="text-2xl">
+        <Grid container spacing={12} direction="column" className="my-32 text-center" justifyContent="center" alignContent="center" >
+            <Grid item container spacing={6} xs={2} direction="column">
+                <Grid item className="text-4xl text-pink-300">Flavors</Grid>
+                <Grid item className="text-2xl">
                     Our cakes, cupcakes, cake jars, can be made
                     into any one of our delicious flavors!
-                </h2>
-                <h3 className="text-xl">
+                </Grid>
+                <Grid item className="text-xl">
                     *Notice: we have over 90 flavors and some are seasonal and won’t
                     be available every day, so call ahead or stop by to see which cupcakes we have that day!*
-                    <br/>**Seasonal flavors are marked**
-                </h3>
+                </Grid>
+                <Grid item className="text-lg text-pink-300">**Seasonal flavors are marked**</Grid>
             </Grid>
-            <Grid item xs={10}>
-                <div className="flex flex-row flex-wrap">
+            <Grid item xs={10} className="flex justify-center">
+                <div className=" w-4/6 flex flex-row flex-wrap justify-center ">
                     {flavors.map((flavor, i) => (
-                        <div key={i} className="m-2 text-center hover:text-pink-300">{flavor}</div>
+                        <div key={i} className="m-2 text-center ">{flavor.endsWith('*') ? <div className="text-pink-300">{flavor}</div> : flavor}</div>
                     ))}
                 </div>
             </Grid>

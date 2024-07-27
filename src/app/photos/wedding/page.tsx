@@ -1,37 +1,14 @@
 // app/photos/page.tsx
-import { ImageList, ImageListItem } from '@mui/material';
-import fs from 'fs';
-import Image from 'next/image';
-import path from 'path';
+import PhotoContainer from '@/components/PhotoContainer';
+import getPhotos from '@/lib/getPhotos';
 
-const getPhotos = () => {
-  const folderPath = path.join(process.cwd(), 'public/cakes', 'wedding');
-  const filenames = fs.readdirSync(folderPath).filter(file => /\.(jpg|jpeg|png|gif)$/i.test(file));
-  return filenames.map(name => `/wedding/${name}`);
-};
-
-const PhotosPage = () => {
-  const photos = getPhotos();
+export default function WeddingPage() {
+  const photos: string[] = getPhotos('wedding');
   
   return (
-    <div className="flex flex-col">
+    <div className="mt-32 flex flex-col">
       <div className="text-3xl text-left p-6 py-12 my-3">Wedding/Groom Cakes</div>
-      <div className="p-4">
-        <ImageList variant="woven" gap={8} cols={10} >
-          {photos.map((photo, i) => (
-            <ImageListItem key={i}>
-                <Image
-                src={`/cakes${photo}`}
-                alt={photo}
-                width={164}
-                height={164}
-                />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </div>
+      <PhotoContainer photos={photos} />
     </div>
   );
 };
-
-export default PhotosPage;
