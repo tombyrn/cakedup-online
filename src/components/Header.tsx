@@ -1,15 +1,12 @@
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem } from "@mui/material";
+import { AppBar, Toolbar } from "@mui/material";
 import Link from "next/link";
 import Logo from "@/components/Logo";
-import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from "react";
 import PhotosMenu from "@/components/PhotosMenu";
 
 export default function Header() {
 
     return (
-
-            <AppBar elevation={0} className='m-0 p-2 fixed w-full h-28 top-0 z-50 flex items-center bg-white'>
+            <AppBar elevation={0} className='m-0 pt-2 fixed w-full h-28 top-0 z-50 flex items-center bg-white'>
                 <Toolbar className="w-full flex justify-between items-end text-gray-400">
                     <div className="flex flex-row">
                         <Link href={'/about'} className="hidden sm:flex">
@@ -39,8 +36,8 @@ export default function Header() {
                     </div>
                 </Toolbar>
 
-                <div className="w-full header-bg translate-y-4">
-                    <div className="w-full h-12 scrolling-header"/>
+                <div className="w-full header-bg translate-y-10">
+                    <div className="w-full h-12 scrolling-triangles"/>
                 </div>
 
                 <Logo/>

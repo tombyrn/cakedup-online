@@ -39,14 +39,14 @@ export default function PhotosMenu() {
                 'aria-labelledby': 'basic-button',
                 }}
             >
-                <Link href="/photos/birthdays"><MenuItem>Birthdays</MenuItem></Link>
-                <Link href="/photos/anniversary"><MenuItem>Anniversary/Retirement</MenuItem></Link>
-                <Link href="/photos/celebrity"><MenuItem>Celebrity</MenuItem></Link>
-                <Link href="/photos/graduation"><MenuItem>Graduation</MenuItem></Link>
-                <Link href="/photos/holiday"><MenuItem>Holiday</MenuItem></Link>
-                <Link href="/photos/religious"><MenuItem>Religious</MenuItem></Link>
-                <Link href="/photos/shower"><MenuItem>Baby/Wedding Shower</MenuItem></Link>
-                <Link href="/photos/wedding"><MenuItem>Wedding/Groom</MenuItem></Link>
+                <Link href="/photos/birthdays"><MenuItem className="font-sans text-gray-400">Birthdays</MenuItem></Link>
+                <Link href="/photos/anniversary"><MenuItem className="font-sans text-gray-400">Anniversary/Retirement</MenuItem></Link>
+                <Link href="/photos/celebrity"><MenuItem className="font-sans text-gray-400">Celebrity</MenuItem></Link>
+                <Link href="/photos/graduation"><MenuItem className="font-sans text-gray-400">Graduation</MenuItem></Link>
+                <Link href="/photos/holiday"><MenuItem className="font-sans text-gray-400">Holiday</MenuItem></Link>
+                <Link href="/photos/religious"><MenuItem className="font-sans text-gray-400">Religious</MenuItem></Link>
+                <Link href="/photos/shower"><MenuItem className="font-sans text-gray-400">Baby/Wedding Shower</MenuItem></Link>
+                <Link href="/photos/wedding"><MenuItem className="font-sans text-gray-400">Wedding/Groom</MenuItem></Link>
             </Menu>        
         </>
     )
