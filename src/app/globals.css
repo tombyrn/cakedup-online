@@ -23,32 +23,20 @@ body {
     text-wrap: balance;
   }
 
-  .main-element {
-    display: flex;
-
-    height: 98%;
-    width: 98%;
-    margin: 5%;
-    align-self: center;
-    background: #fff;
-  }
-
   .border {
-    background: linear-gradient(to right, #fff 20%, #fff 40%, #eea3f0 50%, #eea3f0 55%, #fff 70%, #fff 100%);
+    background: linear-gradient(to right, #fff 10%, #fff 20%, #fdf2f8 50%, #fdf2f8 55%, #fff 70%, #fff 100%);
     background-size: 200% auto;
-
-    animation: shine 3s linear infinite;
+    animation: shine 4s linear infinite;
   }
 
-  .scrolling-bg {
+  .scrolling-delish {
     background-color: transparent;
     background-image: url('/delish.svg');
-    background-repeat: repeat-x;
-    /* background-size: cover; */
+
+    background-repeat: space repeat-x ;
     animation: scroll-bg 20s linear infinite;
-    /* background-color: transparent; */
   }
-  .scrolling-header {
+  .scrolling-triangles {
     background-color: transparent;
     background-image: url('/triangle.svg');
     background-repeat: repeat-x;
@@ -57,7 +45,43 @@ body {
     /* background-color: transparent; */
   }
 
-  .scrolling-bg:hover {
+  .stroke-outline {
+    /* -webkit-text-fill-color: rgb(255, 183, 225);
+    -webkit-text-stroke: 1px black; */
+    color: rgb(255, 183, 225);
+    text-shadow:
+      -3px -3px 2px #ffe,
+      -2px -2px 2px #ffe,
+      -1px -1px 2px #ffe,
+      1px 1px 2px #ffe;
+  }
+  .stroke-outline:hover {
+    /* -webkit-text-fill-color: rgb(255, 183, 225);
+    -webkit-text-stroke: 1px black; */
+    color: #fff;
+    text-shadow:
+      -3px -3px 2px rgb(255, 183, 225),
+      -2px -2px 2px rgb(255, 183, 225),
+      -1px -1px 2px rgb(255, 183, 225),
+      1px 1px 2px rgb(255, 183, 225);
+  }
+
+  .stroke-outline2 {
+    /* -webkit-text-fill-color: rgb(255, 183, 225);
+    -webkit-text-stroke: 1px black; */
+    color: #fff;
+    text-shadow:
+      0px 0px 25px rgba(255, 183, 225, 1);
+  }
+  .stroke-outline2:hover {
+    /* -webkit-text-fill-color: rgb(255, 183, 225);
+    -webkit-text-stroke: 1px black; */
+    color: #fff;
+    text-shadow:
+      0px 0px 25px rgb(255, 105, 192);
+  }
+
+  .scrolling-delish:hover {
     animation-play-state: paused;
   }
 
@@ -74,7 +98,7 @@ body {
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgb(244, 126, 236); /* Pink glow */
+    box-shadow: 0 0 20px rgb(255, 183, 225);
   }
 
 
@@ -140,22 +164,22 @@ body {
     animation: 12s linear 0s infinite normal forwards running stripe-slide;
   }
 
-  .cool-button--red {
+  .cool-button--pink {
     color: rgb(255, 183, 225);
     border: 2px solid rgb(255, 183, 225);
   }
 
-  .cool-button--red::after {
+  .cool-button--pink::after {
     border-top: 2px solid rgb(255, 183, 225);
     background-image: repeating-linear-gradient(45deg, rgb(255, 183, 225), rgb(255, 183, 225), 1px, transparent 2px, transparent 5px);
   }
 
-  .cool-button--red:hover {
+  .cool-button--pink:hover {
     background-color: rgb(255, 183, 225);
   }
 
   .header-bg {
-    background: radial-gradient(ellipse at top, rgba(255,183,225,.5) 0%, rgba(255,183,225,0) 70%),
+    background: radial-gradient(ellipse at top, rgba(255,183,225,.5) 10%, rgba(255,183,225,0) 70%),
       radial-gradient(ellipse at bottom, transparent, transparent);
     /* background: linear-gradient(rgba(255,183,225,.5),transparent); */
 
