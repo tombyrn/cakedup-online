@@ -17,7 +17,7 @@ const carouselItems = [
       </div>,
     },
     {
-      image: '/goods.jpg',
+      image: '/cutout_cupcakes.png',
       alt: 'Slide 3',
       component: <></>,
     },

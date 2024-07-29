@@ -6,8 +6,8 @@ import PhotosMenu from "@/components/PhotosMenu";
 export default function Header() {
 
     return (
-            <AppBar elevation={0} className='m-0 pt-2 fixed w-full h-28 top-0 z-50 flex items-center bg-white'>
-                <Toolbar className="w-full flex justify-between items-end text-gray-400">
+            <header className='m-0 pt-2 fixed w-full h-28 top-0 z-50 flex flex-col items-center bg-white'>
+                <div className="w-full p-4 px-8 flex justify-between items-end text-gray-400">
                     <div className="flex flex-row">
                         <Link href={'/about'} className="hidden sm:flex">
                             <div className="m-2 hover-pink">
@@ -34,9 +34,9 @@ export default function Header() {
                     <div className="flex flex-row">
                         <PhotosMenu/>
                     </div>
-                </Toolbar>
+                </div>
 
-                <div className="w-full header-bg translate-y-10">
+                <div className="w-full header-bg translate-y-8 bg-transparent">
                     <div className="w-full h-12 scrolling-triangles"/>
                 </div>
 
@@ -45,7 +45,7 @@ export default function Header() {
                 {/* <div className="border"></div>
                 <div className="main-element"></div> */}
 
-            </AppBar>
+            </header>
 
     )
 }
