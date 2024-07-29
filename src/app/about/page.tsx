@@ -22,18 +22,18 @@ export default function Page() {
                         </Grid>
                     </Grid>
                     <Grid item container direction="column" spacing={3}>
-                        <Grid item xs={1} className=" text-3xl text-pink-300 font-semibold">
+                        <Grid item className=" text-3xl text-pink-300 font-semibold">
                             So what’s our secret?
                         </Grid>
-                        <Grid item xs={1} className="">
+                        <Grid item className="">
                             Our secret is simple.<br/>
                         </Grid>
-                        <Grid item xs={1} className="">
+                        <Grid item className="">
                             We don’t believe in compromises, so why should you?<br/>
                             And that’s why we’ve focused on creating the best tasting treats using nothing but all-natural ingredients.
                             Whether it’s a cupcake, wedding cake, or parfait – we see each creation as more than just a mouth-watering treat for your tastebuds; we see it as a work of art.
                         </Grid>
-                        <Grid item xs={1} className="">
+                        <Grid item className="">
                             Which is why we focus on every detail and only use the finest quality ingredients. So what does that mean for you? Well that means there are no artificial flavors, fillers, or coloring – Just amazing treats made from the best ingredients on earth.
                         </Grid>
                     </Grid>

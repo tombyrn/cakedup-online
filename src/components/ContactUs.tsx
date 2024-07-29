@@ -21,8 +21,8 @@ export default function ContactUs() {
                         <Grid item container spacing={6} direction="row" justifyContent="center" className="mb-12">
                             <Grid item  container spacing={1} direction="column">
                             <Grid item className="text-3xl">Store Hours</Grid>
-                            <Grid item>Sunday - 10am to 6pm</Grid>
-                            <Grid item>Monday - 10am to 6pm</Grid>
+                            <Grid item>Sunday - Closed</Grid>
+                            <Grid item>Monday - Closed</Grid>
                             <Grid item>Tuesday - 10am to 6pm</Grid>
                             <Grid item>Wednesday - 10am to 6pm</Grid>
                             <Grid item>Thursday - 10am to 6pm</Grid>
