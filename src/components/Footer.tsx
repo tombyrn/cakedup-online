@@ -4,7 +4,7 @@ import { Container } from "@mui/material";
 
 export default function Footer() {
     return (
-        <footer className="mt-4 px-3 py-2 bg-white">
+        <footer className="mt-4 px-3  py-8 bg-white">
 
             <div className="w-full header-bg rotate-180 -translate-y-16">
                 <div className="w-full h-12 scrolling-triangles"/>

@@ -184,7 +184,7 @@ const flavors = [
 
 export default function Page() {
     return (
-        <Grid container spacing={12} direction="column" className="my-32 text-center" justifyContent="center" alignContent="center" >
+        <Grid container spacing={12} direction="column" className="my-32 py-8 text-center" justifyContent="center" alignContent="center" >
             <Grid item container spacing={6} xs={2} direction="column">
                 <Grid item className="text-4xl text-pink-300">Flavors</Grid>
                 <Grid item className="text-2xl">

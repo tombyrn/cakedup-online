@@ -1,5 +1,6 @@
 import { Grid, Paper } from "@mui/material";
 import Image from 'next/image'; 
+import Link from "next/link";
 
 const clients = [
     {
@@ -41,7 +42,9 @@ export default function Clients() {
                     <Grid item container xs={12}>
 
                     <Grid item container xs={0}  md={5} className="h-full" alignItems="center">
-                        <Image src="/celebs.png" alt="Celebrities" width={504} height={334} />
+                        <Link href="/photos/celebrity">
+                            <Image src="/celebs.png" alt="Celebrities" width={504} height={334} />
+                        </Link>
                     </Grid>
                     
                     <Grid item container spacing={3} xs={0}  md={7} direction="column" className="h-full">

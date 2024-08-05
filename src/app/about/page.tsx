@@ -10,11 +10,11 @@ export default function Page() {
                 <div className="text-xl italic"> The Story of Caked Up Cafe </div>
             </Grid>
 
-            <Grid container item spacing={0} direction="row" className="text-left">
-                <Grid item container xs={0} md={6} justifyContent="center">
-                    <Image src="/cc.png" width={500} height={500} alt="chocolate cake"/>
+            <Grid container item spacing={0} direction="row" className="text-left" justifyContent="center">
+                <Grid item xl={3}  container>
+                    <Image src="/flower_cake.jpg" width={3456} height={5184} alt="Vanilla Cake on a Gold Board with Buttercream Flowers" className="p-8"/>
                 </Grid>
-                <Grid item container xs={0} md={6} spacing={2} className="p-8">
+                <Grid item container md={4} spacing={2} className="p-8">
                     <Grid item container direction="column" spacing={3}>
                         <Grid item xs={1} className="text-3xl text-pink-300 font-semibold">From Humble Beginnings</Grid>
                         <Grid item xs={1} className="">
@@ -45,9 +45,8 @@ export default function Page() {
                     <Grid item className="text-3xl text-pink-300"> WHY CHOOSE CAKED UP CAFE? </Grid>
                     <Grid item className="italic text-gray-300"> What makes us different </Grid>
                 </Grid>
+
                 <Grid item container spacing={0} justifyContent="center" direction="row">
-
-
                     <Paper elevation={10} className="w-80 p-8 m-8 hover-glow flex justify-center items-center" >
                         <Grid item container spacing={2} justifyContent="start" direction="column">
                                 <Grid item className="text-2xl text-pink-300">BEST <br/> SERVICE</Grid> 
@@ -68,8 +67,6 @@ export default function Page() {
                                 <Grid item className="p-4 text-left">We create everything from scratch and don’t use any artificial ingredients, fillers, or flavoring.</Grid>
                         </Grid>
                     </Paper>
-
-
                 </Grid>
                 
             </Grid>
