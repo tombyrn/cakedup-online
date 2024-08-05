@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="m-0 scale-y-110 -translate-y-2 ">
-              <Paper className="p-8 w-full flex justify-center items-center text-center rounded-t-3xl z-40 border">
-                <Grid container spacing={0} direction="row" justifyContent="center" alignContent="center" className="py-8 bg-white rounded-3xl">
+        <section className="m-0 scale-y-110 -translate-y-2">
+              <Paper className="border p-8 w-full flex justify-center items-center text-center rounded-t-3xl z-40">
+                <Grid container spacing={0} direction="row" justifyContent="center" alignItems="center" className="p-8 bg-white rounded-3xl">
                       <Grid md={4} item className="p-8">
                         <Image src="/case4.jpg" alt="Cake Happens" width={3456} height={5184} className="rounded-xl"/>
                       </Grid>
