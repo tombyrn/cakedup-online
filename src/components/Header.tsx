@@ -2,6 +2,7 @@ import { AppBar, Toolbar } from "@mui/material";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import PhotosMenu from "@/components/PhotosMenu";
+import FrostedGlass from "@/components/FrostedGlass";
 
 export default function Header() {
 
@@ -36,9 +37,11 @@ export default function Header() {
                     </div>
                 </div>
 
-                <div className="w-full header-bg translate-y-8 bg-transparent">
+                <div className="w-full header-bg bg-transparent">
                     <div className="w-full h-12 scrolling-triangles"/>
                 </div>
+
+                <FrostedGlass/>
 
                 <Logo/>
 
