@@ -47,10 +47,11 @@ body {
       z-index: -50;
       width: 100%;
       min-height: 4rem;
-      border: 2px solid rgba(213, 229, 253, 0.1);
+      -webkit-backdrop-filter: url(#glass);
       backdrop-filter: url(#glass);
       transform:translateY(-3rem);
       overflow: hidden;
+      pointer-events: none;
   }
 
   .stroke-outline {
