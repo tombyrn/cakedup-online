@@ -1,29 +1,33 @@
+"use client"
 import Link from "next/link";
 import Carousel from "react-material-ui-carousel";
 
 const carouselItems = [
     {
-      image: '/case2.jpg',
-      component: <></>,
-    },
-    {
-      image: '/bc.png',
-      alt: 'Slide 2',
-      component: <div className="text-5xl text-pink-300 font-bold sm:-translate-x-24 lg:-translate-x-96">
-        <div className="text-left text-lg text-gray-500 italic">Unique Sweets</div>
-        <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=407#2"><div className="italic stroke-outline2"> Order Online </div></Link>
-      </div>,
+      image: '/monster.jpg',
+      component: 
+        <div>
+          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&item=503#19" target="_blank">
+            <div className="text-7xl hover:font-bold stroke-outline3"> Lets Cake a Memory! </div>
+          </Link>
+          <div className="stroke-outline3 italic text-xl md:text-left text-white"> Order from our online collection of Custom Cakes </div>
+        </div>,
     },
     {
       image: '/cutout_cupcakes.png',
-      component: <></>,
+      component: 
+        <div className="font-bold sm:-translate-x-24 lg:-translate-x-96">
+          <div className="text-left text-lg text-white italic">Unique Sweets</div>
+          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=#2" target="_blank"><div className="italic stroke-outline2 text-6xl"> Order Online </div></Link>
+        </div>,
     },
     {
       image: '/jars.jpg',
-      component: <div className="text-5xl text-pink-300 font-bold -translate-y-14 sm:translate-x-48 ">
-        <div className="text-left text-lg text-gray-100 italic">Cookie and Cake Jars</div>
-        <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=593#4"><div className="stroke-outline"> ORDER NOW </div></Link>
-      </div>,
+      component: 
+        <div className="text-5xl text-pink-300 font-bold -translate-y-14 md:translate-x-48">
+          <div className="text-left text-lg text-gray-100 italic">Cookie and Cake Jars</div>
+          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=593#4" target="_blank"><div className="stroke-outline"> ORDER NOW </div></Link>
+        </div>,
     },
   ];
 

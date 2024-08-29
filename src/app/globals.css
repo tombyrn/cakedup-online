@@ -34,7 +34,7 @@ body {
     background-image: url('/delish.svg');
 
     background-repeat: space repeat-x ;
-    animation: scroll-bg 20s linear infinite;
+    animation: scroll-bg 30s linear infinite;
   }
   .scrolling-triangles {
     background-color: transparent;
@@ -55,33 +55,35 @@ body {
   }
 
   .stroke-outline {
-    /* -webkit-text-fill-color: rgb(255, 183, 225);
-    -webkit-text-stroke: 1px black; */
     color: rgb(255, 183, 225);
     text-shadow:
-      -3px -3px 2px #ffe,
-      -2px -2px 2px #ffe,
-      -1px -1px 2px #ffe,
-      1px 1px 2px #ffe;
+      -3px -3px 5px #ffe,
+      -2px -2px 5px #ffe,
+      -1px -1px 5px #ffe;
   }
   .stroke-outline:hover {
     color: #fff;
     text-shadow:
-      -3px -3px 2px rgb(255, 183, 225),
-      -2px -2px 2px rgb(255, 183, 225),
-      -1px -1px 2px rgb(255, 183, 225),
-      1px 1px 2px rgb(255, 183, 225);
+      -3px -3px 5px rgb(255, 183, 225),
+      -2px -2px 5px rgb(255, 183, 225),
+      -1px -1px 5px rgb(255, 183, 225);
   }
 
   .stroke-outline2 {
     color: #fff;
     text-shadow:
-      0px 0px 25px rgba(255, 183, 225, 1);
+      0px 0px 25px rgba(255, 183, 225, .7);
   }
   .stroke-outline2:hover {
     color: #fff;
     text-shadow:
-      0px 0px 25px rgb(255, 105, 192);
+    0px 0px 30px rgb(255, 105, 192);
+  }
+
+  .stroke-outline3 {
+    color: #fff;
+    text-shadow:
+      0px 0px 25px rgb(135, 255, 173);
   }
 
   .scrolling-delish:hover {

@@ -1,17 +1,9 @@
-"use client"
-import React from 'react';
-import { Container, Grid, Paper } from '@mui/material';
-import Link from 'next/link';
-import Header from '@/components/Header';
 import HomeCarousel from '@/components/HomeCarousel';
 import Delish from '@/components/Delish';
 import Hero from '@/components/Hero';
 import Reviews from '@/components/Reviews';
 import Clients from '@/components/Clients';
-import Footer from '@/components/Footer';
-import Layout from '@/components/Layout';
 import ContactUs from '@/components/ContactUs';
-
 
 export default function Home() {
 
@@ -23,7 +15,6 @@ export default function Home() {
       <Delish/>
       <Reviews/>
       <ContactUs/>
-      
 
       {/* 
       <section className="m-8">
