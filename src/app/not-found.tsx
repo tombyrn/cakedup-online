@@ -7,7 +7,6 @@ export default function NotFound() {
                 <div className="text-3xl text-pink-300">Error 404</div>
                 <div className="text-3xl text-pink-300">Page Not Found</div>
             </Paper>
-
         </div>
     )
 }

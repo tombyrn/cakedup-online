@@ -11,8 +11,8 @@ export default function Page() {
             </Grid>
 
             <Grid container item spacing={0} direction="row" className="text-left" justifyContent="center">
-                <Grid item xl={3}  container>
-                    <Image src="/flower_cake.jpg" width={3456} height={5184} alt="Vanilla Cake on a Gold Board with Buttercream Flowers" className="p-8"/>
+                <Grid item xl={3} container justifyContent="center">
+                    <Image src="/flower_cake.jpg" width={3456/4} height={5184/4} alt="Vanilla Cake on a Gold Board with Buttercream Flowers" className="p-8"/>
                 </Grid>
                 <Grid item container md={4} spacing={2} className="p-8">
                     <Grid item container direction="column" spacing={3}>
