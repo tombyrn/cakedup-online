@@ -9,7 +9,7 @@ export default function PhotoContainer ({photos}: {photos: string[]}) {
                       src={`/cakes${photo}`}
                       alt={photo}
                       fill
-                      className="object-contain"
+                      className="object-scale-down"
                     />
                   </div>
                 ))}

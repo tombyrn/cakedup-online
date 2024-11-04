@@ -72,12 +72,15 @@ body {
   .stroke-outline2 {
     color: #fff;
     text-shadow:
-      0px 0px 25px rgba(255, 183, 225, .7);
+      0px 0px 30px rgb(255, 105, 255);
   }
   .stroke-outline2:hover {
     color: #fff;
     text-shadow:
-    0px 0px 30px rgb(255, 105, 192);
+      0px 0px 25px rgba(255, 183, 225, 50),
+      -5px -5px 10px rgba(255, 183, 225, 250),
+      5px 5px 15px rgba(255, 183, 225, 250),
+      0px 0px 5px rgba(255, 183, 225, 255);
   }
 
   .stroke-outline3 {

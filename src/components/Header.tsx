@@ -25,7 +25,7 @@ export default function Header() {
                             FLAVORS
                         </div>
                     </Link>
-                    <Link href={'https://www.ezcater.com/catering/caked-up-cafe-3'} className="hidden lg:flex">
+                    <Link href={'https://www.ezcater.com/catering/caked-up-cafe-3'} className="hidden lg:flex" target="_blank">
                         <div className="m-2 hover-pink">
                             CATERING
                         </div>

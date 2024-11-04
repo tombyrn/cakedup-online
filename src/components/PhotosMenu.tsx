@@ -17,7 +17,7 @@ export default function PhotosMenu() {
     return (
         <>
             <div className="mr-2 flex items-center hover-pink">
-                <Link href="/photos/birthdays">
+                <Link href="/photos/birthday">
                     PHOTOS
                 </Link>
             </div>
@@ -39,14 +39,12 @@ export default function PhotosMenu() {
                 'aria-labelledby': 'basic-button',
                 }}
             >
-                <Link href="/photos/birthdays"><MenuItem className="font-sans text-gray-400">Birthdays</MenuItem></Link>
-                <Link href="/photos/anniversary"><MenuItem className="font-sans text-gray-400">Anniversary/Retirement</MenuItem></Link>
+                <Link href="/photos/birthday"><MenuItem className="font-sans text-gray-400">Birthdays</MenuItem></Link>
                 <Link href="/photos/celebrity"><MenuItem className="font-sans text-gray-400">Celebrity</MenuItem></Link>
                 <Link href="/photos/graduation"><MenuItem className="font-sans text-gray-400">Graduation</MenuItem></Link>
-                <Link href="/photos/holiday"><MenuItem className="font-sans text-gray-400">Holiday</MenuItem></Link>
-                <Link href="/photos/religious"><MenuItem className="font-sans text-gray-400">Religious</MenuItem></Link>
-                <Link href="/photos/shower"><MenuItem className="font-sans text-gray-400">Baby/Wedding Shower</MenuItem></Link>
-                <Link href="/photos/wedding"><MenuItem className="font-sans text-gray-400">Wedding/Groom</MenuItem></Link>
+                <Link href="/photos/shower"><MenuItem className="font-sans text-gray-400">Baby Shower</MenuItem></Link>
+                <Link href="/photos/wedding"><MenuItem className="font-sans text-gray-400">Wedding/Engagement</MenuItem></Link>
+                <Link href="/photos/pull-apart"><MenuItem className="font-sans text-gray-400">Pull-Apart</MenuItem></Link>
             </Menu>        
         </>
     )

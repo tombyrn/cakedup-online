@@ -14,11 +14,14 @@ export default function Footer() {
                     &copy; 2024 Caked Up Cafe
 
                 <div className="flex justify-center mt-4">
-                    <Link href="https://www.facebook.com/Cakedupcafe/" passHref>
+                    {/* <Link href="https://www.facebook.com/Cakedupcafe/" passHref>
                     <div className="mx-2 hover-pink">Facebook</div>
-                    </Link>
+                    </Link> */}
                     <Link href="https://www.instagram.com/cakedupcafe/" passHref>
                     <div className="mx-2 hover-pink">Instagram</div>
+                    </Link>
+                    <Link href="https://www.tiktok.com/@cakedupcafe" passHref>
+                    <div className="mx-2 hover-pink">Tik-Tok</div>
                     </Link>
                     <Link href="https://cakedup-cafe.square.site/" passHref>
                     <div className="mx-2 hover-pink">Order Now</div>

@@ -1,8 +1,8 @@
 import { Grid, Paper } from "@mui/material";
 import Link from "next/link";
-import Image from "next/image";
 import FacebookLogo from "./FacebookLogo";
 import InstagramLogo from "./InstagramLogo";
+import TikTokLogo from "./TikTokLogo";
 
 const googleAddress = "https://www.google.com/maps/place/Caked+Up+Cafe/@41.1460676,-73.9894787,15z/data=!4m2!3m1!1s0x0:0xc2a3e250b35b93f3";
 
@@ -13,9 +13,16 @@ export default function ContactUs() {
                 <Grid container spacing={3} direction="column">
                     <Grid item className="text-pink-300 font-bold text-5xl"> 
                         CONTACT US
+                        <Grid item></Grid>
+                        <Grid item></Grid>
                     </Grid>
 
-                    <Grid item ><Link href={googleAddress} className="italic hover:text-pink-300">40 S. Main Street, New City, NY 10956</Link></Grid>
+                    <Grid item container direction="column">
+                        <Grid item ><Link href={googleAddress} className="italic">40 S. Main Street, New City, NY 10956</Link></Grid>
+                        <Grid item ><Link href={googleAddress} className="italic">(845) 499-2929</Link></Grid>
+                        <Grid item ><Link href={googleAddress} className="italic">cakedupcafe@gmail.com</Link></Grid>
+
+                    </Grid>
 
                     <Grid item container justifyContent="center">
                         <Grid item container spacing={6} direction="row" justifyContent="center" className="mb-12">
@@ -33,24 +40,31 @@ export default function ContactUs() {
                             <Grid item className="text-3xl">Social Media</Grid>
                             <Grid item container spacing={2} direction="column">
                                 <Grid item container justifyContent="center" >
-                                    <Link href="https://www.instagram.com/cakedupcafe/">
+                                    <Link href="https://www.instagram.com/cakedupcafe/" target="_blank">
                                         <Grid item container spacing={1} direction="row" justifyContent="center" alignItems="center" className="hover:text-pink-300 fill-black hover:fill-pink-300">
                                                 <Grid item>Instagram </Grid>
                                                 <Grid item><InstagramLogo/></Grid>
                                         </Grid>
                                     </Link>
                                 </Grid>
+                                <Grid item container justifyContent="center" >
+                                    <Link href="https://www.tiktok.com/@cakedupcafe" target="_blank">
+                                        <Grid item container spacing={1} direction="row" justifyContent="center" alignItems="center" className="hover:text-pink-300 fill-black hover:fill-pink-300">
+                                                <Grid item>Tik-Tok </Grid>
+                                                <Grid item><TikTokLogo/></Grid>
+                                        </Grid>
+                                    </Link>
+                                </Grid>
 
                                 <Grid item container justifyContent="center" >
-                                    <Link href="https://www.facebook.com/Cakedupcafe/">
+                                    <Link href="https://www.facebook.com/Cakedupcafe/" target="_blank">
                                         <Grid item container spacing={1} direction="row" justifyContent="center" alignItems="center" className="hover:text-pink-300 fill-black hover:fill-pink-300">
                                                 <Grid item>Facebook</Grid>
                                                 <Grid item><FacebookLogo/></Grid>
                                         </Grid>
                                     </Link>
                                 </Grid>
-                                <Grid item>(845) 499-2929</Grid>
-                                <Grid item>cakedupcafe@gmail.com</Grid>
+                                
                             </Grid>
 
                         </Grid>

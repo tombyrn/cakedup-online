@@ -10,23 +10,23 @@ const carouselItems = [
           <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&item=503#19" target="_blank">
             <div className="text-7xl hover:font-bold stroke-outline3"> Lets Cake a Memory! </div>
           </Link>
-          <div className="stroke-outline3 italic text-xl md:text-left text-white"> Order from our online collection of Custom Cakes </div>
+          <div className="stroke-outline3 italic text-xl text-white"> Order from our online collection of Custom Cakes </div>
         </div>,
     },
     {
-      image: '/cutout_cupcakes.png',
+      image: '/cutout_cupcakes.jpg',
       component: 
-        <div className="font-bold sm:-translate-x-24 lg:-translate-x-96">
-          <div className="text-left text-lg text-white italic">Unique Sweets</div>
+        <div className="font-bold md:-translate-x-24 xl:-translate-x-96">
+          <div className="md:text-left text-lg text-white italic">Unique Sweets</div>
           <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=#2" target="_blank"><div className="italic stroke-outline2 text-6xl"> Order Online </div></Link>
         </div>,
     },
     {
-      image: '/jars.jpg',
+      image: '/mallomar_cupcakes.jpg',
       component: 
-        <div className="text-5xl text-pink-300 font-bold -translate-y-14 md:translate-x-48">
-          <div className="text-left text-lg text-gray-100 italic">Cookie and Cake Jars</div>
-          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=593#4" target="_blank"><div className="stroke-outline"> ORDER NOW </div></Link>
+        <div className="text-5xl text-pink-300 font-bold lg:translate-x-64">
+          <div className="md:text-left text-2xl text-gray-100 italic">Mallomar Cupcakes!</div>
+          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=690#2" target="_blank"><div className="stroke-outline"> AVAILABLE NOW </div></Link>
         </div>,
     },
   ];
