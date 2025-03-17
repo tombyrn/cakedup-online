@@ -59,14 +59,16 @@ body {
     text-shadow:
       -3px -3px 5px #ffe,
       -2px -2px 5px #ffe,
-      -1px -1px 5px #ffe;
+      -1px -1px 5px #ffe,
+      2px 2px 3px #ffe;
   }
   .stroke-outline:hover {
     color: #fff;
     text-shadow:
       -3px -3px 5px rgb(255, 183, 225),
       -2px -2px 5px rgb(255, 183, 225),
-      -1px -1px 5px rgb(255, 183, 225);
+      -1px -1px 5px rgb(255, 183, 225),
+      2px 2px 3px rgb(255, 183, 225);
   }
 
   .stroke-outline2 {
@@ -86,7 +88,8 @@ body {
   .stroke-outline3 {
     color: #fff;
     text-shadow:
-      0px 0px 25px rgb(135, 255, 173);
+      0px 0px 5px rgb(255, 183, 225),
+      0px 0px 25px rgb(255, 183, 225);
   }
 
   .scrolling-delish:hover {

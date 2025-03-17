@@ -1,7 +1,6 @@
 import { Grid } from "@mui/material";
 import { Paper } from "@mui/material";
-import Image from 'next/image';
-
+import Image from 'next/image'
 export default function Page() {
     return (
         <Grid container spacing={12} justifyContent="center" alignContent="center" className="mt-16">

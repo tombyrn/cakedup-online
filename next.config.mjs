@@ -2,8 +2,7 @@
 // import withExportImages from 'next-export-optimize-images'
 
 const nextConfig = {
-    // output: "export",
-    // trailingSlash: true,
+    trailingSlash: true,
 };
 
 export default nextConfig;

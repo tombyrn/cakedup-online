@@ -348,7 +348,7 @@ export default function Page() {
             </Grid>
             <Grid item container direction="column">
                 <Grid item className="font-bold text-black">All Flavors</Grid>
-                <Grid item className="font-bold italic text-pink-300">season flavors marked in pink</Grid>
+                <Grid item className="font-bold italic text-pink-300">Seasonal flavors marked in pink</Grid>
             </Grid>
 
             <Grid item className="m-8 text-black">

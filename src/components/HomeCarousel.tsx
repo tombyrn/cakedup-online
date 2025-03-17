@@ -4,7 +4,7 @@ import Carousel from "react-material-ui-carousel";
 
 const carouselItems = [
     {
-      image: '/monster.jpg',
+      image: '/cake_a_memory.jpg',
       component: 
         <div>
           <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&item=503#19" target="_blank">
@@ -22,13 +22,21 @@ const carouselItems = [
         </div>,
     },
     {
-      image: '/mallomar_cupcakes.jpg',
+      image: '/totc.webp',
       component: 
-        <div className="text-5xl text-pink-300 font-bold lg:translate-x-64">
-          <div className="md:text-left text-2xl text-gray-100 italic">Mallomar Cupcakes!</div>
-          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=690#2" target="_blank"><div className="stroke-outline"> AVAILABLE NOW </div></Link>
+        <div className="text-5xl text-pink-300 font-bold ">
+          <div className="text-2xl text-gray-100 italic">Top of the Crumb!</div>
+          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=690#2" target="_blank"><div className="stroke-outline"> NOW SHIPPING </div></Link>
         </div>,
     },
+    // {
+    //   image: '/mallomar_cupcakes.jpg',
+    //   component: 
+    //     <div className="text-5xl text-pink-300 font-bold lg:translate-x-64">
+    //       <div className="md:text-left text-2xl text-gray-100 italic">Mallomar Cupcakes!</div>
+    //       <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=690#2" target="_blank"><div className="stroke-outline"> AVAILABLE NOW </div></Link>
+    //     </div>,
+    // },
   ];
 
 export default function HomeCarousel() {
