@@ -10,6 +10,7 @@ export default function PhotoContainer ({photos}: {photos: string[]}) {
                       alt={photo}
                       fill
                       className="object-contain"
+                      placeholder='blur'
                     />
                   </div>
                 ))}
