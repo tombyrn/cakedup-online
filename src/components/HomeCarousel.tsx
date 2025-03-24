@@ -26,7 +26,7 @@ const carouselItems = [
       component: 
         <div className="text-5xl text-pink-300 font-bold ">
           <div className="text-2xl text-gray-100 italic">Top of the Crumb!</div>
-          <Link href="https://cakedup-cafe.square.site/?location=11eb042e23766710b101ac1f6bbbcc9c&menu=&item=690#2" target="_blank"><div className="stroke-outline"> NOW SHIPPING </div></Link>
+          <Link href="https://cakedup-cafe.square.site/?item=718&shipping=true" target="_blank"><div className="stroke-outline"> NOW SHIPPING </div></Link>
         </div>,
     },
     // {
