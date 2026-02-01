@@ -12,7 +12,7 @@ export default function Home() {
       <HomeCarousel/>
       <Hero/>
       <Clients/>
-      <Delish/>
+      {/* <Delish/> */}
       <Reviews/>
       <ContactUs/>
 

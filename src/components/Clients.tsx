@@ -51,7 +51,7 @@ export default function Clients() {
                         <Grid item xs={1} className="font-bold text-pink-200 text-2xl lg:text-5xl mb-3">CELEBRITY BUZZ</Grid>
                         <Grid item xs={1} className="font-bold text-pink-300 text-4xl lg:text-7xl text-right">WORLD FAMOUS</Grid>
                         <Grid item xs={9} className="text-ellipsis">
-                            “Our first celebrity cake was for Scott Disick from ‘Keeping Up with the Kardashians’,” says Denise. “The 1 Oak club contacted us for that, and since then we’ve made cakes for Kevin Durant, Odell Beckham, Jr., A-Rod’s retirement cake, Rihanna … television production crews, the list goes on.”
+                            “Our first celebrity cake was for Scott Disick from ‘Keeping Up with the Kardashians’,” says owner. “The 1 Oak club contacted us for that, and since then we’ve made cakes for Kevin Durant, Odell Beckham, Jr., A-Rod’s retirement cake, Rihanna … television production crews, the list goes on.”
                         </Grid>
                         <Grid item container xs={5}>
                                 <Grid item container columns={9}>

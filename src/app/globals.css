@@ -91,6 +91,13 @@ body {
       0px 0px 5px rgb(255, 183, 225),
       0px 0px 25px rgb(255, 183, 225);
   }
+  .stroke-outline4 {
+    color: #fff;
+    text-shadow:
+    3px 3px 0px rgb(0, 0, 0),
+    0px 0px 15px rgb(255, 183, 225),
+    0px 0px 25px rgb(255, 183, 225);
+  }
 
   .scrolling-delish:hover {
     animation-play-state: paused;
