@@ -13,7 +13,7 @@ export default function Home() {
         <div className="overflow-hidden w-[2300px] h-[600px] relative flex justify-center">
           <div className="scroll-track"></div>
 
-          <div className="w-screen flex flex-col justify-center items-center border-debug">
+          <div className="w-screen flex flex-col justify-center items-center">
 
             <div className="">
               <div className="min-w-[30rem] min-h-[30rem]  rb_container">
@@ -75,7 +75,7 @@ export default function Home() {
 
               <Link
                 href={TOTC_INTERNET_ADDRESS}
-                className="cool-button cool-button--pink w-full text-centerborder-debug"
+                className="cool-button cool-button--pink w-full text-center"
               >
                 Shop Now
               </Link>
