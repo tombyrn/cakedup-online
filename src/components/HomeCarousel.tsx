@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import Carousel from "react-material-ui-carousel";
+// import Carousel from "react-material-ui-carousel";
 
 const carouselItems = [
   {
@@ -51,7 +51,7 @@ const carouselItems = [
 export default function HomeCarousel() {
       return (
         <section className="mt-24 h-[40rem] flex justify-center">
-          <Carousel
+          {/* <Carousel
               autoPlay
               swipe
               indicators={false}
@@ -66,7 +66,7 @@ export default function HomeCarousel() {
                 className="w-full h-[40rem] bg-cover bg-center text-center items-center flex justify-center bg-transparent"
               >{item.component}</div>
             ))}
-          </Carousel>
+          </Carousel> */}
         </section>
       )
 }
