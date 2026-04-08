@@ -32,7 +32,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <div className="flex flex-row ">
+                <div className="flex flex-row">
                     <PhotosMenu/>
                 </div>
             </div>
