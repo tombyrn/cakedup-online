@@ -3,7 +3,7 @@ import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 
 export default function GraduationPage () {
-  const photos: string[] = getPhotos('graduation');
+  const photos: string[] = getPhotos('/cakes/graduation');
   
   return (
     <div className="mt-48 flex flex-col">

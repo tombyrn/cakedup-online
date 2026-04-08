@@ -4,20 +4,19 @@ import Carousel from "react-material-ui-carousel";
 
 const carouselItems = [
   {
-    image: '/wnsb_carousel.png',
+    image: '/wnsb_apparel.png',
     component: 
-      <div>
-        <Link href="https://cakedup-cafe.square.site/?shipping=true#FHEKKFTLHS7QZ5OPXAPCHZZX" target="_blank">
-        <div className="text-7xl font-bold hover:font-normal stroke-outline4"> Fresh Merch</div>
-        </Link>
-        <div className="stroke-outline4 font-extrabold text-xl text-white"> HOODIES AND T-SHIRTS </div>
+        <Link className="w-full h-full" href="https://cakedup-cafe.square.site/?shipping=true#FHEKKFTLHS7QZ5OPXAPCHZZX" target="_blank">
+      <div className="w-full h-full">
+        {/* <div className="text-7xl font-serif font-normal italic hover:font-medium  stroke-outline4"> Shop Apparel</div> */}
       </div>
+        </Link>
   },
   {
     image: '/cake_a_memory.jpg',
     component: 
-      <div>
-        <Link href="https://cakedup-cafe.square.site/?location=A8C68XT80AVX1&menu=#JH4JUA6BZ7N2J6AA4MIR4QD7" target="_blank">
+    <div>
+        <Link href="https://cakedup-cafe.square.site/?menu=&location=A8C68XT80AVX1#JH4JUA6BZ7N2J6AA4MIR4QD7" target="_blank">
           <div className="text-7xl hover:font-bold stroke-outline3"> Lets Cake a Memory! </div>
         </Link>
         <div className="stroke-outline3 italic text-xl text-white"> Order from our online collection of Custom Cakes </div>
@@ -64,7 +63,7 @@ export default function HomeCarousel() {
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
-                className="w-full h-[40rem] bg-cover bg-center text-center items-center flex justify-center object-fill bg-transparent"
+                className="w-full h-[40rem] bg-cover bg-center text-center items-center flex justify-center bg-transparent"
               >{item.component}</div>
             ))}
           </Carousel>

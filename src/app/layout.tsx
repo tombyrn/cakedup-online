@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+
+// import { Crimson_Pro } from "next/font/google";
+import { Crimson_Pro } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/Layout";
 
-const montserrat = Montserrat({ 
+const roboto = Crimson_Pro({ 
   weight: ['400', '700'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
   fallback: ['sans-serif',] 
@@ -23,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={roboto.className}>
         <Layout>
         {children}
         </Layout>

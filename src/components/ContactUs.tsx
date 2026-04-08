@@ -19,8 +19,11 @@ export default function ContactUs() {
 
                     <Grid item container direction="column">
                         <Grid item ><Link href={googleAddress} className="italic">40 S. Main Street, New City, NY 10956</Link></Grid>
-                        <Grid item ><div className="italic">(845) 499-2929</div></Grid>
-                        <a href="mailto:cakedupcafe@gmail.com" className="italic hover:text-pink-300 fill-black hover:fill-pink-300 z-0">cakedupcafe@gmail.com</a>
+                        <Grid item className="pb-4"><div className="italic">(845) 499-2929</div></Grid>
+
+                            To inquire about a custom cake email:
+                            <a href="mailto:cakedupcafe@gmail.com" className="italic hover:text-pink-300 fill-black hover:fill-pink-300 z-0">cakedupcafe@gmail.com</a>
+                            Be sure to read the automatic response!
 
                     </Grid>
 

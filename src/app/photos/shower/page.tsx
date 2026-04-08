@@ -3,7 +3,7 @@ import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 
 export default function ShowerPage () {
-  const photos: string[] = getPhotos('shower');
+  const photos: string[] = getPhotos('/cakes/shower');
   
   return (
     <div className="mt-48 flex flex-col">

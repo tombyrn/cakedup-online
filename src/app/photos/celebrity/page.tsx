@@ -3,7 +3,7 @@ import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 
 export default function CelebrityPage () {
-  const photos: string[] = getPhotos('celebrity');
+  const photos: string[] = getPhotos('/cakes/celebrity');
   
   return (
     <div className="mt-48 flex flex-col">

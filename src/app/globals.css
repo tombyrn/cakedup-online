@@ -32,15 +32,62 @@ body {
   .scrolling-delish {
     background-color: transparent;
     background-image: url('/delish.svg');
-
+    
     background-repeat: space repeat-x ;
     animation: scroll-bg 30s linear infinite;
   }
+  
+  .scrolling-background {
+    background-image: url('/cake_a_memory.jpg');
+    background-repeat:repeat-x ;
+    background-size: 2300px 600px;
+    animation: scroll-bg 20s linear infinite;
+    will-change: background-position;
+
+  }
+
+  .scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30rem;
+}
+
+@media (min-width: 1200px) {
+  .scroll-wrapper {
+    height: 50rem;
+  }
+}
+
+.scroll-track {
+  position: absolute;
+  inset: 0;
+
+  /* KEY PART */
+  width: 200%; 
+
+  background-image: url('/cake_a_memory.jpg'), url('/cake_a_memory.jpg');
+  background-repeat: repeat-x;
+  background-size: 2300px 600px;
+
+  animation: scroll-track 10s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll-track {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
   .scrolling-triangles {
     background-color: transparent;
     background-image: url('/triangle.svg');
     background-repeat: repeat-x;
-    animation: scroll-bg 30s linear infinite;
+    /* animation: scroll-bg 45s linear infinite; */
   }
 
   .glass {
@@ -108,7 +155,7 @@ body {
   }
 
   .border-pink {
-    border: 2px solid rgb(255, 183, 225); 
+    border: 2px solid rgb(251 207 232); 
   }
 
   .hover-glow {
@@ -116,7 +163,7 @@ body {
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgb(255, 183, 225);
+    box-shadow: 0 0 20px rgb(251 207 232);
   }
 
 
@@ -138,16 +185,6 @@ body {
   .cool-button {
     border: 0px;
     background: rgb(255, 255, 255);
-    font-style: inherit;
-    font-variant: inherit;
-    font-weight: inherit;
-    font-stretch: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    font-optical-sizing: inherit;
-    font-kerning: inherit;
-    font-feature-settings: inherit;
-    font-variation-settings: inherit;
     line-height: normal;
     cursor: pointer;
     display: block;
@@ -156,7 +193,6 @@ body {
     padding: 16px 56px 22px;
     border-radius: 6px;
     margin: 0px 0px 16px;
-    transition: all 0.5s ease 0s;
     overflow: hidden;
     position: relative;
   }
@@ -197,11 +233,33 @@ body {
   }
 
   .header-bg {
-    background: radial-gradient(ellipse at top, rgba(255,183,225,.5) 10%, rgba(255,183,225,0) 70%),
+    background: radial-gradient(ellipse at top, rgba(255,183,225,.5) 10%, rgba(255,255,225,0) 70%),
       radial-gradient(ellipse at bottom, transparent, transparent);
     /* background: linear-gradient(rgba(255,183,225,.5),transparent); */
 
     z-index: -1;
+  }
+
+  .border-debug {
+    border: 3px solid greenyellow;
+  }
+
+  .rb_container {
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    
+  }
+
+  .rb_container::before {
+    content: '';
+    position: absolute;
+    inset: 0;                /* shorthand for top/left/right/bottom 0 */
+    background-image: url('/outline2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: rotate-bg 160s linear infinite;
+    z-index: 0;
   }
 
 }
@@ -225,12 +283,20 @@ body {
 }
 
 @keyframes scroll-bg {
-  0% {
+  from {
     background-position: 0 0;
   }
+  to {
+    background-position: -1200px 0; /* match your image width */
+  }
+}
 
-  100% {
-    background-position: 100% 0;
+@keyframes rotate-bg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 

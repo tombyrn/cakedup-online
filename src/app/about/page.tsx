@@ -42,7 +42,7 @@ export default function Page() {
             <Grid item container spacing={0} direction="column" className=" m-4 text-center" justifyContent="center" alignItems="center">
                 <Grid item container direction="column" >
                     <Grid item className="text-3xl text-pink-300"> WHY CHOOSE CAKED UP CAFE? </Grid>
-                    <Grid item className="italic text-gray-300"> What makes us different </Grid>
+                    <Grid item className="italic text-gray-400"> What makes us different </Grid>
                 </Grid>
 
                 <Grid item container spacing={0} justifyContent="center" direction="row">
@@ -54,14 +54,14 @@ export default function Page() {
                     </Paper>
 
                     <Paper elevation={10} className="w-80 p-8 m-8 hover-glow flex justify-center items-center" >
-                        <Grid item container spacing={2} justifyContent="start">
+                        <Grid item container spacing={2} justifyContent="start" direction="column">
                                 <Grid item className="text-2xl text-pink-300">SIMPLY IRRESISTIBLE</Grid> 
                                 <Grid item className="p-4 text-left">We’re convinced that you will fall in love with our tasty treats. Each one of our desserts has been hand-crafted with love and tastes out of this world.</Grid>
                         </Grid>
                     </Paper>
 
                     <Paper elevation={10} className="w-80 p-8 m-8 hover-glow flex justify-center items-center" >
-                        <Grid item container spacing={2} justifyContent="start">
+                        <Grid item container spacing={2} justifyContent="start" direction="column">
                                 <Grid item className="text-2xl text-pink-300">ALL NATURAL INGREDIENTS</Grid> 
                                 <Grid item className="p-4 text-left">We create everything from scratch and don’t use any artificial ingredients, fillers, or flavoring.</Grid>
                         </Grid>

@@ -1,6 +1,6 @@
 export default function FrostedGlass() {
     return (
-        <div className="glass">
+        <div className="glass ">
             <svg className="hidden">
                 <defs>
                     <filter id="glass" x="0%" y="0%" width="100%" height="100%">

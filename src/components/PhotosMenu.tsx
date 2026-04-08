@@ -16,14 +16,13 @@ export default function PhotosMenu() {
 
     return (
         <>
-            <div className="mr-2 flex items-center hover-pink">
-                <Link href="/photos/birthday">
+            <Link href={'/photos/birthday'} className="m-2 mr-0 text-xl hover-pink">
+                <div className="m-2 text-xl hover-pink">
                     PHOTOS
-                </Link>
-            </div>
+                </div>
+            </Link>
 
-            <IconButton 
-                className="mr-2 p-2"         
+            <IconButton        
                 aria-controls={open ? 'basic-menu' : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}

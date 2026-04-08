@@ -3,7 +3,7 @@ import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 
 export default function HolidayPage() {
-  const photos: string[] = getPhotos('pull_apart');
+  const photos: string[] = getPhotos('/cakes/pull_apart');
   
   return (
     <div className="mt-48 flex flex-col">
