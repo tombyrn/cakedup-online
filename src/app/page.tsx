@@ -189,10 +189,10 @@ export default function Home() {
 
               <p className="text-gray-400">
                 To inquire about an order for custom cakes or large cupcake batches, please email us
-                and follow the instructions in the <span className="font-semibold">automatic response</span>.
+                and <span className="font-extrabold">follow the instructions in the automatic response</span>.
               </p>
 
-              <div className="space-y-2 text-gray-600">
+              <div className="space-y-2 text-gray-400 font-extrabold">
                 <div><a href="mailto:cakedupcafe@gmail.com"  className="hover:text-pink-300">📧 cakedupcafe@gmail.com</a></div>
                 <div><a href="tel:+18454992929"  className="hover:text-pink-300">📞 (845) 499-2929</a></div>
                 <div><a href="https://www.google.com/maps/place/40+S+Main+St,+New+City,+NY+10956/@41.1460661,-73.9943604,17z"  className="hover:text-pink-300">📍 40 S Main Street, New City NY</a></div>
@@ -214,22 +214,22 @@ export default function Home() {
 
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>
-                  <span className="text-gray-600">10am – 6pm</span>
+                  <span className="font-extrabold">10am – 6pm</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>Saturday</span>
-                  <span className="text-gray-600">10am – 5pm</span>
+                  <span className="font-extrabold">10am – 5pm</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>Sunday</span>
-                  <span className="text-gray-600">Closed</span>
+                  <span className="font-extrabold">Closed</span>
                 </div>
 
                 <div className="flex justify-between">
                   <span>Monday</span>
-                  <span className="text-gray-600">Closed</span>
+                  <span className="font-extrabold">Closed</span>
                 </div>
               </div>
             </div>

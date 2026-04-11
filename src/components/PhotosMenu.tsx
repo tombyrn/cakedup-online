@@ -45,12 +45,13 @@ export default function PhotosMenu() {
                 'aria-labelledby': 'basic-button',
                 }}
             >
-                <Link href="/photos/birthday"><MenuItem className="font-sans text-gray-400">Birthdays</MenuItem></Link>
-                <Link href="/photos/celebrity"><MenuItem className="font-sans text-gray-400">Celebrity</MenuItem></Link>
-                <Link href="/photos/graduation"><MenuItem className="font-sans text-gray-400">Graduation</MenuItem></Link>
-                <Link href="/photos/shower"><MenuItem className="font-sans text-gray-400">Baby Shower</MenuItem></Link>
-                <Link href="/photos/wedding"><MenuItem className="font-sans text-gray-400">Wedding/Engagement</MenuItem></Link>
-                <Link href="/photos/pull-apart"><MenuItem className="font-sans text-gray-400">Pull-Apart</MenuItem></Link>
+                {/* TODO FIX TEXT COLOR */}
+                <MenuItem><Link href="/photos/birthday" className="font-sans text-gray-400">Birthdays</Link></MenuItem>
+                <MenuItem><Link href="/photos/celebrity" className="font-sans text-gray-400">Celebrity</Link></MenuItem>
+                <MenuItem><Link href="/photos/graduation" className="font-sans text-gray-400">Graduation</Link></MenuItem>
+                <MenuItem><Link href="/photos/shower" className="font-sans text-gray-400">Baby Shower</Link></MenuItem>
+                <MenuItem><Link href="/photos/wedding" className="font-sans text-gray-400">Wedding/Engagement</Link></MenuItem>
+                <MenuItem><Link href="/photos/pull-apart" className="font-sans text-gray-400">Pull-Apart</Link></MenuItem>
             </Menu>        
         </>
     )

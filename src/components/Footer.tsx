@@ -11,13 +11,9 @@ export default function Footer() {
                 {/* <div className="w-full h-12 scrolling-triangles"/>  */}
                 <div className="w-full h-20"/>
             </div>
-            <div className="w-full text-center">
+            <div className="w-full text-center text-gray-400 ">
 
-                    40 S. Main St New City, NY 10956<br/>
-                    &copy; 2026 Caked Up Cafe
-
-
-                <div className="flex justify-center mt-4">
+                <div className="flex justify-center mb-4 font-bold">
                     {/* <Link href="https://www.facebook.com/Cakedupcafe/" passHref>
                     <div className="mx-2 hover-pink">Facebook</div>
                     </Link> */}
@@ -37,6 +33,12 @@ export default function Footer() {
                         {/* <TikTokLogo/> */}
                     </Link>
                 </div>
+                <div>
+                    40 S. Main St New City, NY 10956<br/>
+                    &copy; 2026 Caked Up Cafe
+                </div>
+
+
             </div>
       </footer>
     )
