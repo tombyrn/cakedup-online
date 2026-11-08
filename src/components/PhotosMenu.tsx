@@ -49,9 +49,10 @@ export default function PhotosMenu() {
                 <MenuItem><Link href="/photos/birthday" className="font-sans text-gray-400">Birthdays</Link></MenuItem>
                 <MenuItem><Link href="/photos/celebrity" className="font-sans text-gray-400">Celebrity</Link></MenuItem>
                 <MenuItem><Link href="/photos/graduation" className="font-sans text-gray-400">Graduation</Link></MenuItem>
+                <MenuItem><Link href="/photos/pull-apart" className="font-sans text-gray-400">Pull Apart</Link></MenuItem>
+                <MenuItem><Link href="/photos/religious" className="font-sans text-gray-400">Religious</Link></MenuItem>
                 <MenuItem><Link href="/photos/shower" className="font-sans text-gray-400">Baby Shower</Link></MenuItem>
                 <MenuItem><Link href="/photos/wedding" className="font-sans text-gray-400">Wedding/Engagement</Link></MenuItem>
-                <MenuItem><Link href="/photos/pull-apart" className="font-sans text-gray-400">Pull-Apart</Link></MenuItem>
             </Menu>        
         </>
     )

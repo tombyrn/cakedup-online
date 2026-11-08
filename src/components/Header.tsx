@@ -10,11 +10,11 @@ export default function Header() {
         <header className='m-0 h-16 fixed w-full top-0 z-50 flex flex-col items-center bg-slate-50'>
             <div className="min-w-full p-4 md:p-8 flex items-center justify-between content-between text-gray-400 bg-slate-50">
                 <div className="flex flex-row ">
-                    <Link href={'/about'} className="hidden sm:flex">
+                    {/* <Link href={'/about'} className="hidden sm:flex">
                         <div className="m-2 text-xl hover-pink">
                             ABOUT
                         </div>
-                    </Link>
+                    </Link> */}
                     <Link href='https://cakedup-cafe.square.site/'>
                         <div className="m-2 text-xl hover-pink">
                             ORDER NOW

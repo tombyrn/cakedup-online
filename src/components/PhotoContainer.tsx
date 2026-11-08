@@ -3,12 +3,11 @@ import Link from 'next/link';
 import path from "path";
 
 export default function PhotoContainer ({photos}: {photos: string[]}) {
-  console.log(photos)
-    return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
-          {photos.map((photo, index) => (
-            <div key={index} className="relative aspect-square">
-              <Link href={photo.replace("/cakes","/photos")}>
+  return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
+        {photos.map((photo, index) => (
+          <Link key={index} href={photo.replace("/cakes","/photos")}>
+            <div className="relative aspect-square">
                 <Image
                   src={photo}
                   alt={path.parse(photo).name.replaceAll('_', ' ')}
@@ -19,9 +18,9 @@ export default function PhotoContainer ({photos}: {photos: string[]}) {
                         25vw"
                   className="object-contain"
                 />
-              </Link>
             </div>
-          ))}
-        </div>
-    )
+          </Link>
+        ))}
+      </div>
+  )
 }

@@ -1,3 +1,4 @@
+// app/page.tsx
 import Link from "next/link";
 import Image from "next/image";
 import getPhotos from "@/lib/getPhotos";
@@ -9,7 +10,7 @@ export default function Home() {
     <>
       {/* SPLASH */}
       <section className="mt-24 overflow-hidden flex justify-center items-center flex-col bg-transparent">
-        {/* WNSB DESIGN */}
+        {/* LCAM DESIGN */}
         <div className="overflow-hidden w-[2300px] h-[600px] relative flex justify-center">
           <div className="scroll-track"></div>
 
@@ -168,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT US */}
-      <section className="w-5/6 py-16 px-6 m-16 bg-pink-50 flex justify-center rounded-xl justify-self-center">
+      <section className="py-16 px-6 m-16 bg-pink-50 flex justify-center rounded-xl justify-self-center">
         <div className="max-w-5xl w-full grid md:grid-cols-2 gap-10">
 
           {/* LEFT */}
@@ -176,11 +177,6 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-pink-300">
               Contact Us
             </h2>
-            {/* 
-            <p className="text-gray-600">
-              We'd love to hear from you! Whether you're placing a custom order,
-              asking about availability, or just saying hello — reach out anytime within our hours.
-            </p> */}
 
             <div className="bg-white rounded-2xl shadow-md p-6 space-y-4">
               <h3 className="text-xl font-semibold text-pink-300">
@@ -213,7 +209,7 @@ export default function Home() {
               <div className="space-y-2 text-gray-400">
 
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
+                  <span>Tuesday - Friday</span>
                   <span className="font-extrabold">10am – 6pm</span>
                 </div>
 
@@ -223,14 +219,10 @@ export default function Home() {
                 </div>
 
                 <div className="flex justify-between">
-                  <span>Sunday</span>
+                  <span>Sunday - Monday</span>
                   <span className="font-extrabold">Closed</span>
                 </div>
 
-                <div className="flex justify-between">
-                  <span>Monday</span>
-                  <span className="font-extrabold">Closed</span>
-                </div>
               </div>
             </div>
 

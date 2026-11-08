@@ -1,4 +1,4 @@
-// app/photos/page.tsx
+// app/photos/wedding/page.tsx
 import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 

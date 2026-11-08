@@ -1,9 +1,9 @@
+// app/photos/[category]/[image]/page.tsx
 import Image from "next/image";
 import fs from "fs";
 import path from "path";
 
-export const dynamicParams = false;
-
+export const dynamicParams = false; // dynamic route segments not included in generateStaticParams will return a 404.
 
 // statically generate pages for each image in each folder in /public/cakes/
 // returns the name of the folder (category) and the image file basename (image)
@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: {params: {category:string; im
   const description = `View ${title} from our ${category} collection.`;
 
   return {
+    metadataBase: new URL("https://cakedupcafe.com"),
     title,
     description,
     openGraph: {

@@ -1,6 +1,5 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-
-// import { Crimson_Pro } from "next/font/google";
 import { Crimson_Pro } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/Layout";

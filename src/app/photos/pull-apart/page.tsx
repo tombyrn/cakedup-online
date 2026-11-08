@@ -1,8 +1,8 @@
-// app/photos/page.tsx
+// app/photos/pull-apart/page.tsx
 import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 
-export default function HolidayPage() {
+export default function PullApartPage() {
   const photos: string[] = getPhotos('/cakes/pull_apart');
   
   return (

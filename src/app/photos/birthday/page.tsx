@@ -1,10 +1,9 @@
-// app/photos/page.tsx
+// app/photos/birthday/page.tsx
 import PhotoContainer from '@/components/PhotoContainer';
 import getPhotos from '@/lib/getPhotos';
 
 export default function BirthdayPage() {
   const photos: string[] = getPhotos('/cakes/birthday');
-  console.log(photos);
   
   return (
     <div className="pt-48 flex flex-col bg-slate-50">
