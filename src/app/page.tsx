@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT US */}
-      <section className="py-16 px-6 m-16 bg-pink-50 flex justify-center rounded-xl justify-self-center">
+      <section className="py-16 px-6 m-16 bg-pink-50 flex justify-center rounded-xl ">
         <div className="max-w-5xl w-full grid md:grid-cols-2 gap-10">
 
           {/* LEFT */}
