@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://cakedupcafe.com/photos/religious", lastModified: modifyDate },
     { url: "https://cakedupcafe.com/photos/shower", lastModified: modifyDate },
     { url: "https://cakedupcafe.com/photos/wedding", lastModified: modifyDate },
+    { url: "https://cakedupcafe.com/photos/custom-cakes", lastModified: modifyDate },
   ];
 
   categories.forEach((category) => {
