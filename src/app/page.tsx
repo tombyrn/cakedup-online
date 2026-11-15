@@ -27,7 +27,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative stroke-outline3 text-2xl text-center">A collection of custom cakes ready in five days notice.</div>
+            <div className="px-4 relative stroke-outline3 text-2xl text-center">A collection of custom cakes ready in five days notice.</div>
           </div>
 
         </div>
@@ -169,8 +169,8 @@ export default function Home() {
       </section>
 
       {/* CONTACT US */}
-      <section className="py-16 px-6 m-16 bg-pink-50 flex justify-center rounded-xl ">
-        <div className="max-w-5xl w-full grid md:grid-cols-2 gap-10">
+      <section className="py-16 px-6 m-8 bg-pink-50 flex justify-center rounded-xl ">
+        <div className="max-w-5xl grid md:grid-cols-2 gap-10">
 
           {/* LEFT */}
           <div className="space-y-6">

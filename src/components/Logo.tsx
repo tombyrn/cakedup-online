@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <Link href="/" className="-translate-y-44 scale-75 md:scale-100">
-      <div className="w-36 h-36">
+      <div className="w-36 h-36 relative">
 
       <Image
         src="/logo.png"
