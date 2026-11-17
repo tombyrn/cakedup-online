@@ -7,8 +7,8 @@ import FrostedGlass from "@/components/FrostedGlass";
 export default function Header() {
 
     return (
-        <header className='m-0 h-16 fixed w-full top-0 z-50 flex flex-col items-center bg-slate-50'>
-            <div className="min-w-full p-4 md:p-8 flex items-center justify-between content-between text-gray-400 bg-slate-50">
+        <header className='m-0 h-16 fixed w-full top-0 z-50 flex flex-col items-center bg-white'>
+            <div className="min-w-full p-4 md:p-8 flex items-center justify-between content-between text-gray-400 bg-white">
                 <div className="flex flex-row ">
                     {/* <Link href={'/about'} className="hidden sm:flex">
                         <div className="m-2 text-xl hover-pink">
@@ -37,8 +37,8 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="w-full header-bg bg-slate-50">
-                <div className="w-full h-12 scrolling-triangles bg-slate-50"/>
+            <div className="w-full header-bg bg-white">
+                <div className="w-full h-12 scrolling-triangles bg-white"/>
             </div>
 
             <FrostedGlass/>
